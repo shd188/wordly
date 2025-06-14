@@ -81,9 +81,10 @@ export const useWordleGame = () => {
 
       if (letter === targetWord[i]) {
         newKeyboardState[letter] = 'correct';
-      } else if (targetWord.includes(letter) && currentState !== 'correct') {
+      } else if (targetWord.includes(letter) && (currentState === 'unused' || currentState === 'present' || currentState === 'absent')) {
         newKeyboardState[letter] = 'present';
-      } else if (currentState !== 'correct' && currentState !== 'present') {
+// 原比较可能存在问题，根据提示进行修改，避免无意义的类型比较
+      } else {
         newKeyboardState[letter] = 'absent';
       }
     }
