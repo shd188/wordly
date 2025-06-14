@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import GameBoard from './GameBoard';
 import Keyboard from './Keyboard';
+// 尝试不同的相对路径导入，可能文件路径有误
 import GameModal from './GameModal';
 import HelpModal from './HelpModal';
 import { useWordleGame } from '../hooks/useWordleGame';
