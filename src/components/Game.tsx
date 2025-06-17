@@ -76,7 +76,7 @@ export default function Game({ onBackToHome }: GameProps) {
           </button>
 
           <div className="text-center">
-            <h1 className="text-2xl font-bold text-[#1a1a1a]">Wordly Clone - Daily Word Puzzle Game</h1>
+            <h1 className="text-2xl font-bold text-[#1a1a1a]">Wordly - Daily Word Puzzle Game</h1>
             <p className="text-xs text-[#787c7e]">{formattedDate} • No. {daysSinceEpoch}</p>
           </div>
 
