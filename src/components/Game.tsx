@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
+import { Helmet } from 'react-helmet-async';
 import GameBoard from './GameBoard';
 import Keyboard from './Keyboard';
 // 尝试不同的相对路径导入，可能文件路径有误
@@ -57,6 +58,11 @@ export default function Game({ onBackToHome }: GameProps) {
 
   return (
     <div className="min-h-screen bg-[#f7f7f7] flex flex-col">
+      <Helmet>
+        <title>Play Wordly - Daily Word Puzzle Game | Guess the 5-Letter Word</title>
+        <meta name="description" content="Play today's Wordly puzzle! Guess the 5-letter word in 6 tries and track your statistics. Free online word game with daily challenges and unlimited gameplay." />
+        <meta name="keywords" content="Wordly game, daily word puzzle, 5-letter word challenge, online word game, Wordle alternative, word guessing game" />
+      </Helmet>
       {/* Header */}
       <header className="bg-white border-b border-[#d3d6da] px-4 py-3">
         <div className="max-w-lg mx-auto flex items-center justify-between">
@@ -70,7 +76,7 @@ export default function Game({ onBackToHome }: GameProps) {
           </button>
 
           <div className="text-center">
-            <h1 className="text-2xl font-bold text-[#1a1a1a]">Wordle</h1>
+            <h1 className="text-2xl font-bold text-[#1a1a1a]">Wordly Clone - Daily Word Puzzle Game</h1>
             <p className="text-xs text-[#787c7e]">{formattedDate} • No. {daysSinceEpoch}</p>
           </div>
 

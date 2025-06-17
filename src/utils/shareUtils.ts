@@ -9,7 +9,7 @@ export const generateShareText = (
   const guessCount = gameWon ? guesses.length : 'X';
   const maxGuesses = GAME_CONSTANTS.MAX_GUESSES;
 
-  let shareText = `Wordle ${gameNumber} ${guessCount}/${maxGuesses}\n\n`;
+  let shareText = `Wordly ${gameNumber} ${guessCount}/${maxGuesses}\n\n`;
 
   // Generate emoji grid
   guesses.forEach(guess => {
@@ -57,7 +57,7 @@ export const copyToClipboard = async (text: string): Promise<boolean> => {
 
 export const getPuzzleNumber = (): number => {
   const today = new Date();
-  const epoch = new Date('2021-06-19'); // Wordle epoch
+  const epoch = new Date('2021-06-19'); // Wordly epoch
   const daysSinceEpoch = Math.floor((today.getTime() - epoch.getTime()) / (1000 * 60 * 60 * 24));
   return daysSinceEpoch;
 };

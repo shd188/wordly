@@ -1,6 +1,6 @@
-# Wordle Clone - Daily Word Puzzle Game
+# Wordly - Daily Word Puzzle Game
 
-A modern, open-source implementation of the popular word puzzle game Wordle. Challenge your vocabulary and strategic thinking with a new 5-letter word every day!
+A modern, open-source implementation of the popular word puzzle game Wordly. Challenge your vocabulary and strategic thinking with a new 5-letter word every day!
 
 ## 🎮 Game Features
 

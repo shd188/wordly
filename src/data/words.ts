@@ -70,7 +70,7 @@ export const VALID_WORDS = [
 // Get a random word for today's puzzle
 export const getTodaysWord = (): string => {
   const today = new Date();
-  const start = new Date('2021-06-19'); // Wordle epoch
+  const start = new Date('2021-06-19'); // Wordly epoch
   const diff = Math.floor((today.getTime() - start.getTime()) / (1000 * 60 * 60 * 24));
   return ANSWER_WORDS[diff % ANSWER_WORDS.length];
 };

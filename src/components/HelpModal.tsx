@@ -24,7 +24,7 @@ export default function HelpModal({ isOpen, onClose }: HelpModalProps) {
         <div className="space-y-6">
           <div>
             <p className="text-[#1a1a1a] mb-4">
-              Guess the <strong>WORDLE</strong> in 6 tries.
+              Guess the <strong>Wordly</strong> in 6 tries.
             </p>
             <ul className="text-[#1a1a1a] space-y-2 text-sm">
               <li>• Each guess must be a valid 5-letter word.</li>
@@ -125,7 +125,7 @@ export default function HelpModal({ isOpen, onClose }: HelpModalProps) {
           {/* Additional Info */}
           <div className="border-t border-[#d3d6da] pt-4">
             <p className="text-sm text-[#787c7e] text-center">
-              <strong>A new WORDLE will be available each day!</strong>
+              <strong>A new Wordly will be available each day!</strong>
             </p>
           </div>
         </div>

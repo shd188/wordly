@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Block internal search results
+Disallow: /search?q=
+
+# Block admin pages if any
+Disallow: /admin/
+
+# Sitemaps
+Sitemap: https://www.wordly.club/sitemap.xml

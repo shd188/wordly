@@ -3,8 +3,8 @@ import type { GameData, GameState, KeyState } from '../types/game';
 import { GAME_CONSTANTS } from '../types/game';
 import { getTodaysWord, isValidWord } from '../data/words';
 
-const STORAGE_KEY = 'wordle-game-data';
-const STATS_KEY = 'wordle-stats';
+const STORAGE_KEY = 'Wordly-game-data';
+const STATS_KEY = 'Wordly-stats';
 
 export const useWordleGame = () => {
   const [gameData, setGameData] = useState<GameData>(() => {

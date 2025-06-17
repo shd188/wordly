@@ -1,4 +1,4 @@
-# Wordle Clone Development Todos
+# Wordly Development Todos
 
 ## Phase 1: Core Setup & Design
 - [x] Initialize React project with Tailwind
@@ -43,7 +43,7 @@
 - [x] Version and deploy
 
 ## ✅ COMPLETED FEATURES
-- Complete Wordle clone matching NYT design
+- Complete Wordly matching NYT design
 - Welcome screen with accurate puzzle numbering
 - Full game logic with word validation
 - Tile animations and visual feedback
