@@ -45,9 +45,20 @@ export default function Welcome({ onStartGame }: WelcomeProps) {
         </h1>
 
         {/* Subtitle */}
-        <h2  className="text-lg text-[#787c7e] mb-8 font-medium">
+        <h2  className="text-lg text-[#787c7e] mb-4 font-medium">
           Get 6 chances to guess a 5-letter word.
         </h2>
+
+        {/* Game Introduction */}
+        <p className="text-[#333] mb-4 text-sm leading-relaxed max-w-md mx-auto">
+          Wordle is a popular word puzzle game that challenges your vocabulary and strategic thinking. Each day brings a new 5-letter word to solve, with color-coded feedback to guide your guesses. Track your progress and improve your skills as you play daily.
+        </p>
+
+        {/* About Section */}
+        <div className="bg-[#f0f0f0] rounded-lg p-4 text-sm text-[#555] mb-8 max-w-md mx-auto">
+          <p className="mb-2"><strong>About This Game:</strong> This is a fan-made Wordle clone created to provide the same great word puzzle experience with additional features and improvements.</p>
+          <p>New puzzles are released daily at midnight UTC. No account is required to play - just start guessing and enjoy!</p>
+        </div>
 
         {/* Buttons */}
         <div className="space-y-3 mb-8">
@@ -77,7 +88,7 @@ export default function Welcome({ onStartGame }: WelcomeProps) {
             No. {puzzleNumber}
           </p>
           <p className="text-sm">
-            Edited by Tracy Bennett
+            Edited by Heidi
           </p>
         </div>
       </div>

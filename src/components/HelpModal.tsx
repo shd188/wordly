@@ -110,6 +110,18 @@ export default function HelpModal({ isOpen, onClose }: HelpModalProps) {
             </div>
           </div>
 
+          {/* Strategy Tips */}
+          <div className="border-t border-[#d3d6da] pt-4">
+            <h3 className="text-lg font-semibold text-[#1a1a1a] mb-3">Game Strategy Tips</h3>
+            <ul className="text-[#1a1a1a] space-y-2 text-sm">
+              <li>• Start with words containing common vowels (A, E, I, O, U) to quickly identify which vowels are in the target word.</li>
+              <li>• Consider using words with repeated letters in later guesses to test for duplicate letters.</li>
+              <li>• Pay attention to letter frequency - letters like S, T, R, N, and L appear more frequently in English words.</li>
+              <li>• If you identify a correct letter but wrong position, try placing it in different positions in subsequent guesses.</li>
+              <li>• Keep track of letters you've already tried to avoid repeating guesses with the same letters.</li>
+            </ul>
+          </div>
+
           {/* Additional Info */}
           <div className="border-t border-[#d3d6da] pt-4">
             <p className="text-sm text-[#787c7e] text-center">

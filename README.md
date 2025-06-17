@@ -1,50 +1,48 @@
-# React + TypeScript + Vite
+# Wordle Clone - Daily Word Puzzle Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, open-source implementation of the popular word puzzle game Wordle. Challenge your vocabulary and strategic thinking with a new 5-letter word every day!
 
-Currently, two official plugins are available:
+## 🎮 Game Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Daily Challenges**: A new word puzzle available each day at midnight UTC
+- **Color-Coded Feedback**: Green (correct letter, correct position), Yellow (correct letter, wrong position), Gray (letter not in word)
+- **Keyboard Support**: Play using your physical keyboard for faster input
+- **Responsive Design**: Enjoy on desktop, tablet, and mobile devices
+- **Game Statistics**: Track your win streak and guess distribution
+- **Share Results**: Easily share your daily results with friends
 
-## Expanding the ESLint configuration
+## 📝 How to Play
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Guess the 5-letter word in 6 attempts
+2. Each guess must be a valid English word
+3. After each guess, the color of the tiles will change to show how close your guess was to the word:
+   - 🟩 Green: The letter is correct and in the right position
+   - 🟨 Yellow: The letter is correct but in the wrong position
+   - ⬜ Gray: The letter is not in the word
+4. A new word will be available tomorrow, so check back daily to maintain your streak!
 
-- Configure the top-level `parserOptions` property like this:
+## 💡 Strategy Tips
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- Start with words containing common vowels (A, E, I, O, U) to quickly identify which vowels are in the target word
+- Consider using words with repeated letters in later guesses to test for duplicates
+- Pay attention to letter frequency - letters like S, T, R, N, and L appear more frequently in English words
+- Keep track of letters you've already tried to avoid repeating guesses
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 🛠️ Technical Implementation
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Built with React, TypeScript, and Vite for optimal performance. The game state is managed with custom hooks, and the UI is styled with Tailwind CSS for a clean, modern look.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## 🔄 Daily Updates
+
+The game features a new word every 24 hours, ensuring fresh challenges for regular players. The word list is carefully curated to provide an optimal level of difficulty for all players.
+
+## 📱 Supported Devices
+
+The game works on all modern browsers and devices, including:
+- Desktop (Chrome, Firefox, Safari, Edge)
+- iOS (iPhone, iPad)
+- Android (phones and tablets)
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to submit a Pull Request with improvements, bug fixes, or new features.
